@@ -1,0 +1,10 @@
+C:\Users\43719121844\Desktop\Eventos\bin\Debug\netcoreapp2.0\Eventos.deps.json
+C:\Users\43719121844\Desktop\Eventos\bin\Debug\netcoreapp2.0\Eventos.runtimeconfig.json
+C:\Users\43719121844\Desktop\Eventos\bin\Debug\netcoreapp2.0\Eventos.runtimeconfig.dev.json
+C:\Users\43719121844\Desktop\Eventos\bin\Debug\netcoreapp2.0\Eventos.dll
+C:\Users\43719121844\Desktop\Eventos\bin\Debug\netcoreapp2.0\Eventos.pdb
+C:\Users\43719121844\Desktop\Eventos\obj\Debug\netcoreapp2.0\Eventos.csproj.CoreCompileInputs.cache
+C:\Users\43719121844\Desktop\Eventos\obj\Debug\netcoreapp2.0\Eventos.AssemblyInfoInputs.cache
+C:\Users\43719121844\Desktop\Eventos\obj\Debug\netcoreapp2.0\Eventos.AssemblyInfo.cs
+C:\Users\43719121844\Desktop\Eventos\obj\Debug\netcoreapp2.0\Eventos.dll
+C:\Users\43719121844\Desktop\Eventos\obj\Debug\netcoreapp2.0\Eventos.pdb

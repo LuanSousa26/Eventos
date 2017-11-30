@@ -664,28 +664,30 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\43719121844\\.nuget\\packages\\": {},
+    "C:\\Users\\lalvess\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\43719121844\\Desktop\\Eventos\\Eventos.csproj",
+      "projectUniqueName": "C:\\Users\\lalvess\\Desktop\\Eventos\\Eventos.csproj",
       "projectName": "Eventos",
-      "projectPath": "C:\\Users\\43719121844\\Desktop\\Eventos\\Eventos.csproj",
-      "packagesPath": "C:\\Users\\43719121844\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\43719121844\\Desktop\\Eventos\\obj\\",
+      "projectPath": "C:\\Users\\lalvess\\Desktop\\Eventos\\Eventos.csproj",
+      "packagesPath": "C:\\Users\\lalvess\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lalvess\\Desktop\\Eventos\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\43719121844\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\lalvess\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -704,7 +706,7 @@
         "dependencies": {
           "Microsoft.NETCore.App": {
             "target": "Package",
-            "version": "2.0.0",
+            "version": "2.0",
             "autoReferenced": true
           }
         },

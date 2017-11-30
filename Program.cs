@@ -16,10 +16,13 @@ namespace Eventos
         {
             // Instancia o evento com um novo delegate do tipo calculo e adiciona o método Crescente.
             Calc += new Calculo(Crescente);
+
             // Instancia o evento com um novo delegate do tipo calculo e adiciona o método Decrescente.
             Calc += new Calculo(Decrescente);
+
             // Instancia o evento com um novo delegate do tipo calculo e adiciona o método Decrescente.
             Calc += new Calculo(Calculadora);
+
             // Chamada do Evento, nesta linha os três métodos inseridos acima serão chamados em ordem.
             Calc();
 
@@ -30,6 +33,12 @@ namespace Eventos
 
         //Evento criado do tipo Delegate  
         static event Calculo Calc;
+
+
+        /*
+       **************************************MÉTODOS****************************************************************
+              */
+
         //Método Crescente(), observa-se que ele também é void igual ao delegate
         public static void Crescente()
         {
@@ -60,7 +69,7 @@ namespace Eventos
             }
             catch
             {
-                System.Console.WriteLine("O número não está no Padrão correto!");
+                System.Console.WriteLine("O número não está no padrão correto!");
                 //Vá para Primeiro:, ou seja, faz tudo denovo até o try passar com um número inteiro
                 goto Primeiro;
             }
@@ -69,44 +78,49 @@ namespace Eventos
 
             try
             {
+                //Solicita e lê os dados
                 System.Console.WriteLine("Favor digite o segundo número:");
                 Numero2 = Int32.Parse(Console.ReadLine());
             }
             catch
             {
                 System.Console.WriteLine("O número não está no Padrão correto!");
-                //Vá para Segundo:, ou seja, faz tudo denovo até o try passar com um número inteiro
+                //Vá para Segundo:, ou seja, faz tudo denovo até o TRY passar com um número inteiro.
                 goto Segundo;
             }
-
+        //Se entrar alguma operação não aceita, retornará para o Operação fará novamente a solicitação.
         Operacao:
             System.Console.WriteLine("Favor digite a Operação Desejada: + * / -");
             String opcao = Console.ReadLine();
             switch (opcao)
             {
-
+                //Soma
                 case "+":
                     Total = Numero1 + Numero2;
                     break;
-
+                //Multiplicação
                 case "*":
                     Total = Numero1 * Numero2;
                     break;
-
+                //Divisão
                 case "/":
                     Total = Numero1 / Numero2;
                     break;
-
+                //Subtração
                 case "-":
                     Total = Numero1 - Numero2;
                     break;
-
+                //Caso não aceito
                 default:
                     System.Console.WriteLine("Opção incorreta!");
+                //Se a operação for errada volta para o Operacao: Solicitando novamente para escolher
+                // uma opção.
                     goto Operacao;
 
 
             }
+
+            //Apresenta no console os dados do cálculo.
             Console.WriteLine(" Calculo :" + Numero1 + opcao + Numero2 + "=" + Total);
 
         }

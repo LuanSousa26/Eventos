@@ -28,28 +28,30 @@ namespace Eventos
         // criando o delegate do tipo void, os métodos a serem inseridos em um delegate devem obedecer sua estrutura, ou seja o delegate aceita métodos VOID.
         public delegate void Calculo();
 
+        //Evento criado do tipo Delegate  
         static event Calculo Calc;
-
+        //Método Crescente(), observa-se que ele também é void igual ao delegate
         public static void Crescente()
         {
             for (int i = 1; i <= 100; i++)
                 System.Console.WriteLine(i);
         }
 
-
+        //Método Decrescente(), observa-se que ele também é void igual ao delegate
         public static void Decrescente()
         {
             for (int i = 100; i >= 1; i--)
                 System.Console.WriteLine(i);
         }
 
+        //Método Calculadora(), observa-se que ele também é void igual ao delegate
         public static void Calculadora()
         {
 
 
 
             int Numero1, Numero2, Total;
-
+        // Estrutura de controle, se houver algum erro na leitura do número, colocar null ou um caracter o sistema retorna para o Primeiro:
         Primeiro:
             System.Console.WriteLine(" Favor Digite o primeiro número:");
             try
@@ -59,9 +61,10 @@ namespace Eventos
             catch
             {
                 System.Console.WriteLine("O número não está no Padrão correto!");
+                //Vá para Primeiro:, ou seja, faz tudo denovo até o try passar com um número inteiro
                 goto Primeiro;
             }
-
+        // Estrutura de controle, se houver algum erro na leitura do número, colocar null ou um caracter o sistema retorna para o Segundo:
         Segundo:
 
             try
@@ -72,6 +75,7 @@ namespace Eventos
             catch
             {
                 System.Console.WriteLine("O número não está no Padrão correto!");
+                //Vá para Segundo:, ou seja, faz tudo denovo até o try passar com um número inteiro
                 goto Segundo;
             }
 
